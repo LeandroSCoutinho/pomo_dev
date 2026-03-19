@@ -1,0 +1,19 @@
+.input {
+    background-color: transparent;
+    color: var(--text-default);
+    text-align: center;
+    outline: none;
+    padding: 0.4rem;
+    border: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid var(--primary);
+}
+
+.input:focus {
+    border: 0.2rem solid var(--primary);
+    border-radius: 0.4rem;
+}
+
+.input:disabled {
+    color: var(--text-disabled);
+    border-bottom: 0.2rem solid var(--disabled);
+}
