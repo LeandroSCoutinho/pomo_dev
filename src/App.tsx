@@ -1,13 +1,17 @@
 import { Home } from './pages/Home';
+import { TaskContextProvider } from './contexts/TaskContext/TaskContextProvider'; 
+
 
 import './styles/theme.css'
 import './styles/global.css';
-import { NotFound } from './pages/Notfound';
 
 
  export function App(){
   return (
-   <NotFound/>
+    <TaskContextProvider>
+      <Home/>
+    </TaskContextProvider>
+    
   );
 }
 
